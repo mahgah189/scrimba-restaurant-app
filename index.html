@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="burger-banner">
+        <div class="banner-text">
+            <h1>Jimmy's Diner</h1>
+            <p>The best burgers and pizzas in town.</p>
+        </div>
+    </header>
+
+    <section class="menu-items" id="menu-items">
+        <!-- <div class="container">
+            <div class="menu-entry">
+                <p class="food-img">🍕</p>
+                <div class="food-desc">
+                    <p class="food-title">Pizza</p>
+                    <p class="food-ingredients">pepperoni,mushroom,mozarella</p>
+                    <p class="food-price">$14</p>
+                </div>
+                <button class="add-food-btn" id="add-food-btn">+</button>
+            </div>
+            <hr class="light-divider">
+        </div> -->
+    </section>
+
+    <div class="shopping-cart-placeholder" id="shopping-cart-placeholder"></div>
+
+    <section class="shopping-cart display-off" id="shopping-cart">
+        <p class="cart-header">Your order</p>
+            <div class="cart-items-container" id="cart-items-container">
+                <!-- <div class="item-list">
+                    <div class="item">
+                        <div class="item-details">
+                            <p class="item-name">Pizza</p>
+                            <button class="remove-btn">remove</button>
+                        </div>
+                        <div class="cart-price">$14</div>
+                    </div>
+                </div> -->
+            </div>
+        <hr class="dark-divider">
+        <div class="cart-total">
+            <p class="total-text">Total price:</p>
+            <div class="total-price" id="total-price">$0</div>
+        </div>
+        <button class="checkout-btn" id="checkout-btn" data-checkout="checkout-btn">Complete order</button>
+    </section>
+
+    <div class="checkout-modal display-off" id="checkout-modal" data-modal="checkout-modal">
+        <p class="checkout-header" data-modal="content">Enter card details</p>
+        <form class="checkout-form" id="checkout-form">
+            <input type="text" name="name-form" id="name-form" placeholder="Enter your name" data-modal="input-form" required />
+            <input type="text" name="card-form" id="card-form" minlength="16" maxlength="16" pattern="[0-9]{16}" placeholder="Enter card number" data-modal="input-form" required />
+            <input type="text" name="cvv-form" id="cvv-form" minlength="3" maxlength="3" pattern="[0-9]{3}" placeholder="Enter CVV" data-modal="input-form" required />
+            <button class="checkout-btn pay-btn" type="submit" data-pay="pay-btn" data-modal="input-form">Pay</button>
+        </form>
+    </div>
+
+    <div class="thank-you-banner display-off" id="thank-you-banner"></div>
+
+    <script src="/index.js" type="module"></script>
+
+</body>
+
+</html>

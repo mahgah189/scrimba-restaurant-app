@@ -1,0 +1,271 @@
+body {
+    font-family: "Smythe", Verdana, system-ui;
+    margin: 0;
+}
+
+section .menu-entry {
+    opacity: 75%;
+}
+
+.menu-entry, .shopping-cart {
+    width: 80%;
+}
+
+/* Styling for the top banner section */
+
+.burger-banner {
+    margin: 0;
+    background-image: url('images/burger-banner.jpeg');
+    background-position: 0% 65%;
+    background-size: cover;
+    width: 100%;
+    height: 150px;
+}
+
+.banner-text {
+    display: inline-block;
+    color: white;
+    font-style: lighter;
+    margin-top: 1.875em;
+    margin-left: 1.875em;
+}
+
+.banner-text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 1.5rem;
+    margin-top: 0.208em;
+}
+
+/* Styling for individual food items (.menu-entry is the container class for each item) */
+
+.menu-entry {
+    display: flex;
+    margin: 1.875em auto;
+    gap: 1.25em;
+}
+
+.menu-entry p {
+    margin: 0;
+}
+
+.food-img {
+    font-size: 4.375rem;
+}
+
+.food-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.3125em;
+}
+
+.food-title {
+    font-size: 1.563rem;
+}
+
+.food-ingredients {
+    color: #8B8B8B;
+    font-size: 1rem;
+}
+
+.add-food-btn {
+    width: 2em;
+    height: 2em;
+    font-size: 1.25rem;
+    font-weight: lighter;
+    color: #3C3C3C;
+    background-color: white;
+    border: 1px solid #DEDEDE;
+    border-radius: 50%;
+    align-self: center;
+    margin-left: auto;
+}
+
+.light-divider {
+    border: none;
+    background-color: #DEDEDE;
+    height: 1px;
+    width: 80%;
+}
+
+/* The shopping cart placeholder - solely for blank white space when the shopping cart is not visible */
+
+.shopping-cart-placeholder {
+    min-height: 300px;
+}
+
+/* Styling for the shopping cart section */
+
+.shopping-cart {
+    font-size: 1.563rem;
+    margin: 1em auto;
+}
+
+.shopping-cart p {
+    margin: 0;
+}
+
+.cart-header {
+    text-align: center;
+}
+
+/* Styling for individual line items in the shopping cart */
+
+.item {
+    display: flex;
+    gap: 0.3125em;
+    margin-top: 0.469em;
+}
+
+.item-details {
+    display: flex;
+    gap: 0.3125em;
+}
+
+.item-list {
+    margin-top: 1.25em;
+}
+
+.remove-btn {
+    border: none;
+    background-color: white;
+    color: #BBBBBB;
+}
+
+.cart-price {
+    margin-left: auto;
+}
+
+/* Styling for the shopping cart total section */
+
+.dark-divider {
+    border: none;
+    background-color: #393333;
+    height: 2px;
+}
+
+.cart-total {
+    display: flex;
+}
+
+.total-price {
+    margin-left: auto;
+}
+
+.checkout-btn {
+    color: white;
+    background-color: #16DB99;
+    border: none;
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 0.625rem;
+    margin-top: 3em;
+    width: 100%;
+    height: 40px;
+    border-radius: 2.5px;
+}
+
+/* Styling for the checkout modal */
+
+.checkout-modal {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 80%;
+    padding: 5%;
+    font-family: Verdana;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0 0 500px 50px #757575;
+    border-radius: 2.5px;
+}
+
+.checkout-header {
+    font-weight: bold;
+    margin-right: 3.125em;
+    margin-top: 1em;
+}
+
+.checkout-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2.5em;
+}
+
+.checkout-form input {
+    height: 5px;
+    padding: 1.25em;
+    border: 1px solid #757575;
+    border-radius: 2.5px;
+}
+
+.pay-btn {
+    height: 45px;
+    font-size: 0.75em;
+}
+
+/* Thank-you banner styling */
+
+.thank-you-banner {
+    background-color: #ECFDF5;
+    width: 75%;
+    padding: 0.625em;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.thank-you-banner h2 {
+    font-size: 1.25rem;
+    color: #065F46;
+    margin-top: 1em;
+}
+
+/* Class to hide element */
+
+.display-off {
+    display: none;
+}
+
+.display-on {
+    display: block;
+}
+
+/* Animations */
+
+.add-food-btn,
+.checkout-btn,
+.pay-btn {
+    transition: 0.5s;
+}
+
+.add-food-btn:hover,
+.remove-btn:hover,
+.checkout-btn:hover,
+.pay-btn:hover {
+    cursor: pointer
+}
+
+.add-food-btn:hover {
+    border: 1px solid #757575;
+}
+
+.add-food-btn:active {
+    width: 2.1em;
+    height: 2.1em;
+}
+
+.remove-btn:hover {
+    text-decoration: underline;
+}
+
+.checkout-btn:active,
+.pay-btn:active {
+    background-color: #20a277;
+}
